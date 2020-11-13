@@ -12,6 +12,14 @@ function App() {
     setCitas([...citas, cita]);
   };
 
+  //Eliminar Cita
+  const eliminarCita = (citaAEliminar) => {
+    const agendaPostEliminación = citas.filter(
+      (cita) => cita.id !== citaAEliminar
+    );
+    setCitas(agendaPostEliminación);
+  };
+
   return (
     <Fragment>
       <h1>Administrador Básico de Citas</h1>
@@ -23,7 +31,10 @@ function App() {
           <div className='one-half column'>
             <h2>Administra tus citas</h2>
             {citas.map((cita) => (
-              <Cita key={cita.id} cita={cita}></Cita>
+              <Cita
+                key={cita.id}
+                cita={cita}
+                eliminarCita={eliminarCita}></Cita>
             ))}
           </div>
         </div>
