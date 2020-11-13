@@ -1,7 +1,8 @@
 //imr
 import React, { Fragment, useState } from 'react';
+import { nanoid } from 'nanoid';
 
-const Formulario = () => {
+const Formulario = ({ crearCita }) => {
   //Crear State de Citas
   const [cita, setCita] = useState({
     mascota: '',
@@ -41,14 +42,23 @@ const Formulario = () => {
       return;
     }
 
+    //Eliminar el mensaje previo
+    setError(false);
+
     //Asignar un ID(key distinto)
+    cita.id = nanoid();
 
     //Crear la cita
+    crearCita(cita);
 
     //Reiniciar el form
-
-    alert('Enviando Formulario...');
-    setError(false);
+    setCita({
+      mascota: '',
+      propietario: '',
+      fecha: '',
+      hora: '',
+      sintomas: '',
+    });
   };
 
   return (
