@@ -41,6 +41,14 @@ function App() {
     <Fragment>
       <h1>Administrador Básico de Citas</h1>
       <div className='container'>
+        <h5
+          className='u-text-center'
+          style={{ textAlign: 'center', color: 'white' }}>
+          Un administrador básico de citas que hace uso de formularios y su
+          validación respectiva además de algunos react hooks 🎉
+        </h5>
+      </div>
+      <div className='container'>
         <div className='row'>
           <div className='one-half column'>
             <Formulario crearCita={crearCita} />
