@@ -1,7 +1,9 @@
 //imr
 import React, { Fragment, useState } from 'react';
 import { nanoid } from 'nanoid';
+import PropTypes from 'prop-types';
 
+//sfc
 const Formulario = ({ crearCita }) => {
   //Crear State de Citas
   const [cita, setCita] = useState({
@@ -114,6 +116,10 @@ const Formulario = ({ crearCita }) => {
       </form>
     </Fragment>
   );
+};
+
+Formulario.propTypes = {
+  crearCita: PropTypes.func.isRequired,
 };
 
 export default Formulario;
