@@ -41,16 +41,16 @@ $ cd proyecto_de_interes
 _Instala las dependencias necesarias y arranca el servidor_
 
 ```
-$ yarn install
-$ yarn start
+$ npm install
+$ npm start
 ```
 
 ## Autor ✒️
 
-- **Osiris Román** - [OsirisRoman](https://github.com/OsirisRoman)
+-   **Osiris Román** - [OsirisRoman](https://github.com/OsirisRoman)
 
 ## Resultado :tada:
 
 Puedes ver los resultado de este repositorio en el siguiente enlace:
 
-- Administrador-Básico-De-Citas: https://osirisroman-administrador-de-citas.netlify.app/
+-   Administrador-Básico-De-Citas: https://osirisroman-administrador-de-citas.netlify.app/
